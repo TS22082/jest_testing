@@ -15,5 +15,11 @@ describe("Add", () => {
     it("Should throw an error if the second argument is not a number", () => {
       expect(() => add(2, "2")).toThrowError();
     });
+
+    it("Should throw an error if no arguments were recieved", () => {
+      expect(() => add()).toThrowError();
+    });
   });
 });
+
+describe("Minus", () => {});
